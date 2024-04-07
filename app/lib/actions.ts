@@ -19,6 +19,8 @@ const FormSchema = z.object({
     date: z.string(),
 });
 
+
+
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
 const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 
